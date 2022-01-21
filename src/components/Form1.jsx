@@ -33,7 +33,7 @@ function Form1()  {
                     <p>{result}</p>
                     <input type="submit" value="Potvrdi rezervaciju" onClick={addValue} />
                     <br /><br />
-                    <span className="counter">Broj izvršenih rezervacija: {brojac}</span><br></br>
+                    <span className="counter">Broj izvršenih rezervacija: {brojac}</span><br/><br/>
         </form>
         </div>
       );
