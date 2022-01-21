@@ -1,0 +1,19 @@
+#kraj {
+  background-color: white;
+  color: red;
+  text-align: center;
+  font-size: 1.5vw;
+}
+
+.social-icon-link {
+  color: red;
+  font-size: 6vh;
+}
+
+.social-icons {
+  justify-content: space-between;
+}
+
+.pomoc {
+  background: none;
+}
