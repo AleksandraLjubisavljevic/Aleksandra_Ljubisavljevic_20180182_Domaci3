@@ -15,6 +15,11 @@ function NavBar() {
                 O nama
               </Link>
             </li>
+            <li className='nav-item'>
+              <Link to='/rezervacije' className='nav-links'>
+                Rezervacije
+              </Link>
+            </li>
           </ul>
         </div>
         </div>

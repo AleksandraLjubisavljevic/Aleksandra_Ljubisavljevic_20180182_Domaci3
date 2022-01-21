@@ -1,24 +1,52 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import NavBar from "./components/NavBar";
+import Footer from "./components/Footer";
+import Prostorije from "./components/Prostorije";
+import Rezervacije from "./components/Rezervacije";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
+
+  const prostorije = [
+    {
+      id: 1,
+      description:
+        "Uvek prijatna i topla atmosfera",
+      image: "images/5.jpg"
+    },
+    {
+      id: 2,
+      description:
+        "Bajkovita basta.",
+      image: "images/6.jpg"
+    },
+    {
+      id: 3,
+      description:
+        "Veliki izbor raznovrsnih jela i pića.",
+      image: "images/7.jpg"
+    },
+    {
+      id: 4,
+      description:
+        "Organizacija raznih vrsta proslava.",
+      image: "images/8.jpg"
+    },
+  ];
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter className="App">
+      <NavBar />
+      <Routes>
+      <Route
+          path="/"
+          element={<Prostorije prostorije={prostorije}/>}
+        />
+        <Route path="/rezervacije" element={<Rezervacije />} />
+      </Routes>
+      <Footer />
+      
+    </BrowserRouter>
+   
   );
 }
 
