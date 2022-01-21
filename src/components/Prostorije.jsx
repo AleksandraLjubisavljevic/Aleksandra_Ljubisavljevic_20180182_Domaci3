@@ -1,6 +1,6 @@
 import React from "react";
 import Prostor from "./Prostor";
-
+import ONama from "./Onama";
 
 const Prostorije = ({ prostorije })  => {
   const name = "New prostorija Name";
@@ -9,6 +9,7 @@ const Prostorije = ({ prostorije })  => {
   const image="image";
   return (
     <div className="sve-prostorije">
+      <ONama />
       {prostorije.map((prostorija) => (
         <Prostor prostorija={prostorija} />
       ))}
